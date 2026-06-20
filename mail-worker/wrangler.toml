@@ -1,4 +1,4 @@
-name = "cloud-mail"
+name = "cloud-mail-build-1"
 main = "src/index.js"
 compatibility_date = "2025-06-04"
 keep_vars = true
@@ -6,14 +6,14 @@ keep_vars = true
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
+[[d1_databases]]
+binding = "db"			#d1数据库绑定名默认不可修改
+database_name = "mail-100320721_xyz"		#d1数据库名字
+database_id = "852cc53c-684a-4fe2-86db-31f8c1d7593a"		#d1数据库id
 
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
+[[kv_namespaces]]
+binding = "kv"			#kv绑定名默认不可修改
+id = "mail-100320721.xyz"					#kv数据库id
 
 #[[r2_buckets]]
 #binding = "r2"			#r2对象存储绑定名默认不可修改
